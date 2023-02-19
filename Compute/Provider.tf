@@ -8,9 +8,8 @@ terraform {
 }
 
 provider "aws" {
-  region     = "us-west-2"
-  access_key = "myaccesskey"
-  secret_key = "mysecretkey"
+  region     = "eu-west-2"
+  profile = "default"
 }
 # Create a VPC
 resource "aws_vpc" "test-terraform" {
